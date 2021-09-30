@@ -79,6 +79,19 @@ CREATE TABLE public.user_relations (
     CONSTRAINT fk_relation FOREIGN KEY (relation_id) REFERENCES public.relation_type(relation_type_id) ON DELETE SET NULL
 );
 
+CREATE TABLE public.roles (
+    role_id            SERIAL PRIMARY KEY,
+    role_name          VARCHAR(25) NOT NULL
+);
+
+CREATE TABLE public.role_user (
+    role_id            INT NOT NULL,
+    user_id            INT NOT NULL,
+
+    CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES public.users (user_id) ON DELETE CASCADE,
+    CONSTRAINT fk_role_id FOREIGN KEY (role_id) REFERENCES public.roles (role_id) ON DELETE CASCADE
+);
+
 -- MEETINGS
 
 CREATE TABLE public.meetings (
@@ -92,4 +105,3 @@ CREATE TABLE public.meetings (
 
     CONSTRAINT fk_user FOREIGN KEY (organizer_id) references public.users(user_id) ON DELETE CASCADE
 );
-
