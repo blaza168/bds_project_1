@@ -5,6 +5,7 @@
 DROP TABLE IF EXISTS public.user_contacts;
 DROP TABLE IF EXISTS public.user_address;
 DROP TABLE IF EXISTS public.user_relations;
+DROP TABLE IF EXISTS public.meeting_invitations;
 DROP TABLE IF EXISTS public.meetings;
 DROP TABLE IF EXISTS public.users;
 DROP TABLE IF EXISTS public.relation_type;
@@ -93,3 +94,10 @@ CREATE TABLE public.meetings (
     CONSTRAINT fk_user FOREIGN KEY (organizer_id) references public.users(user_id) ON DELETE CASCADE
 );
 
+CREATE TABLE public.meeting_invitations (
+    meeting_id        INT NOT NULL,
+    user_id           INT NOT NULL,
+
+    CONSTRAINT fk_meeting FOREIGN KEY (meeting_id) REFERENCES public.meetings(meeting_id) ON DELETE CASCADE,
+    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES public.users(user_id) ON DELETE CASCADE
+);
