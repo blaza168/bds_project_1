@@ -23,3 +23,10 @@ johndoe@email.cz:postgres
 **Maintenance database**:  postgres
 
 **Password**: postgres
+
+# "Documentation"
+
+On container startup, flyway will automatically apply all migrations located in ./db/migration/postgresql.
+
+Page 4 in "Project1.pdf" describes how whole application works.
+Application in production can be found [here](https://studio-effect.cz).
