@@ -1,6 +1,6 @@
 # Run Database for the BPC-BDS course
 
-Clone the repository: 
+Clone the repository: https://github.com/blaza168/bds_project_1
 
 and run the following command in the root directory.
 ```shell

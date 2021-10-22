@@ -1,6 +1,7 @@
+-- Subpages for establishment
 CREATE TABLE establishment_subpages (
                                         id                      INT NOT NULL PRIMARY KEY auto_increment,
-                                        establishment_id        INT NOT NULL,
+                                        establishment_id        INT NOT NULL, -- FK establishment
                                         route                   VARCHAR(50) NOT NULL, -- url route of subpage
                                         content                 MEDIUMTEXT NOT NULL, -- content of subpage
                                         name                    VARCHAR(50) NOT NULL, -- name of subpage (title)
