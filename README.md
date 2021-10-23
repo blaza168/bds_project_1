@@ -30,3 +30,8 @@ On container startup, flyway will automatically apply all migrations located in 
 
 Page 4 in "Project1.pdf" describes how whole application works.
 Application in production can be found [here](https://studio-effect.cz).
+
+# 3rd normal form
+Why I think this application is in 3rd normal form ?
+
+Since this database design doesn't break 3rd normal form, it means that this standard must be met.

@@ -1,4 +1,4 @@
--- Explanation of chosen data type: I chosed these data types, because data stored in specific columns have this data type.
+-- Explanation of chosen data type: I've chosen these data types, because data stored in specific columns have this data type.
 
 -- Table for user's role
 CREATE TABLE roles (
