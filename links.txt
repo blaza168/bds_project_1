@@ -1,0 +1,14 @@
+Repo:
+https://github.com/blaza168/bds_project_1
+
+Postgres DDL + DML:
+https://github.com/blaza168/bds_project_1/tree/master/db/migration/postgresql
+
+Ultimate documentation:
+https://github.com/blaza168/bds_project_1/tree/master/documentation
+
+MySQL DDL + DML + description:
+https://github.com/blaza168/bds_project_1/tree/master/project_solution/mysql
+
+Data "generator":
+https://github.com/blaza168/bds_project_1/blob/master/project_solution/scripts/data_generator.py

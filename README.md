@@ -35,3 +35,5 @@ Application in production can be found [here](https://studio-effect.cz).
 Why I think this application is in 3rd normal form ?
 
 Since this database design doesn't break 3rd normal form, it means that this standard must be met.
+
+there is no transitive dependency for non-prime attributes as well as it is in second normal form

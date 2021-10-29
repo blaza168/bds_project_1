@@ -10,7 +10,7 @@ CREATE TABLE roles (
 INSERT INTO roles (role) VALUES ("admin");
 
 
--- Table for users of administration users
+-- Table for users of administration part of DB
 CREATE TABLE users (
                        username    VARCHAR(50)  NOT NULL PRIMARY KEY,  -- PK, username
                        hash        BINARY(32), -- password hash.
